@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>在线memo</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="/javascripts/index.js"></script>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <div class="header">
+      <h2>LinYa</h2>
+      <h3>在线便签</h3>
+      <div class="nav">
+        <ul>
+          <li>全部</li>
+          <li>已完成</li>
+          <li>排序</li>
+        </ul>
+      </div>
+      <div class="login">
+        <button id="login-github">使用Github登录</button>
+        <button id="login-sign">用户登录</button>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="cell" id="cell1">
+          <div class="node-header">
+            <span class="node-date">2018年01月08日</span>
+            <span class="node-time">下午 3时39分64秒</span>
+            <span class="node-delete">X</span>
+            </div>
+            <div class="node-content">
+              <textarea class="node-text" id="" cols="30" rows="10"></textarea>
+              <ul class="node-start">
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+                <li class=""></li>
+              </ul>
+              <div class="node-staus node-staus-no">✔️</div>
+              <div class="node-staus node-staus-finsh">已完成</div>
+            </div>
+        </div>
+        <div class="cell" id="cell1">
+          <div class="node-header">
+            <span class="node-date">2018年11月08日</span>
+            <span class="node-time">下午 3时39分64秒</span>
+            <span class="node-delete">X</span>
+          </div>
+          <div class="node-content">
+            <textarea class="node-text" id="" cols="30" rows="10"></textarea>
+            <ul class="node-start">
+              <li class=""></li>
+              <li class=""></li>
+              <li class=""></li>
+              <li class=""></li>
+              <li class=""></li>
+            </ul>
+            <div class="node-staus node-staus-no">✔️</div>
+            <div class="node-staus node-staus-finsh">已完成</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

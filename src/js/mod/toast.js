@@ -1,3 +1,5 @@
+// var $ = require('jquery')
+require('less/toast.less')
 //这是一个toast的实现模块
 
 function toast(msg,time) {

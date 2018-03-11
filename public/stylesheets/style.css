@@ -1,3 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:hover {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+*::afger {
+  box-sizing: border-box;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -6,15 +20,7 @@ body {
 a {
   color: #00B7FF;
 }
-.toast {
-    position:fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 20px;
-    color: red;
-    background-color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    box-shadow: 0 0 3px 1px rgba(255, 255, 255, 0.708);
-    display: none;
+
+ul,li {
+  list-style: none;
 }
