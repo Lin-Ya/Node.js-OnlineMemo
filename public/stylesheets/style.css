@@ -1,15 +1,3 @@
-.toast {
-  position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 20px;
-  color: red;
-  background-color: #fff;
-  padding: 5px 10px;
-  border-radius: 3px;
-  box-shadow: 0 0 3px 1px rgba(182, 108, 108, 0.708);
-  display: none;
-}
 * {
   margin: 0;
   padding: 0;
@@ -27,4 +15,37 @@
 ul,
 li {
   list-style: none;
+}
+.header {
+  width: 100%;
+  height: 110px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+.header .header-ct {
+  margin: 0 auto;
+  outline: 1px solid red;
+  width: 1200px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .header-ct .header-title {
+  height: 70px;
+}
+.header .header-ct .header-title span {
+  vertical-align: middle;
+}
+.header .header-ct .header-title :nth-child(1) {
+  color: #00d3aa;
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.header .header-ct .header-title :nth-child(2) {
+  color: #00d3aa;
+  font-size: 40px;
+}
+.header .header-ct .nav ul {
+  display: flex;
 }

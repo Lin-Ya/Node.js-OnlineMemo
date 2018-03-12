@@ -2,4 +2,4 @@
 // // var Note = require('../mod/note.js')
 // // var $ = require('jquery')
 // require('less/note.less');
-// require('less/index.less');
+require('less/index.less');
