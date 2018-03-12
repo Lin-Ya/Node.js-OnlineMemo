@@ -18,9 +18,10 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(70, 150, 182);
 }
 
 ul,li {
   list-style: none;
+  color: red;
 }

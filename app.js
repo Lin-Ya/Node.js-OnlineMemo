@@ -7,9 +7,24 @@ var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-var signin = require('./routes/signin')
 
 var app = express();
+
+//用于自动刷新浏览器
+var bs = require('browser-sync').create();
+app.listen(3000, function () {
+  bs.init({
+    open: false,
+    ui: false,
+    notify: false,
+    proxy: 'localhost:3000',
+    files: ['./public/**/**.*', './**/*.ejs'],
+    port: 8080
+  });
+  console.log('App (dev) is going to be running on port 8080 (by browsersync).');
+});
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
