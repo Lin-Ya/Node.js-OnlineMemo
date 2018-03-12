@@ -1,4 +1,5 @@
-// var $ = require('jquery')
+var $ = require('jquery')
+//require lss
 require('less/toast.less')
 //这是一个toast的实现模块
 
