@@ -24,6 +24,7 @@
     "nodemon": "^1.17.1",
     "serve-favicon": "~2.4.5",
     "style-loader": "^0.20.3",
+    "to-string-loader": "^1.1.5",
     "url-loader": "^1.0.1"
   },
   "devDependencies": {

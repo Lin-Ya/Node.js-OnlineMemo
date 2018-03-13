@@ -17,19 +17,19 @@ module.exports = [
                 mod: path.join(__dirname, "js/mod"),
                 less: path.join(__dirname, "less")
             },
-            extensions: ['.less','.css']
+            extensions: ['.less']
         },
         module: {
             rules: [
                 {
                     test: /\.less$/, 
                     use: Ex.extract({
-                        use: ['css-loader','less-loader'],
+                        use: ['css-loader', 'less-loader'],
                     })
                 },
                 {
                     test: /\.(woff|svg|eot|ttf|otf)(\??.*)?/,
-                    loader: 'url-loader?name=fonts/[name].[md5:hash:hex;7].[ext]'
+                    loader: ['url-loader?name=fonts/[name].[md5:hash:hex:7].[ext]']
                 }
             ]
         },

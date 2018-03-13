@@ -3,4 +3,4 @@
 // // var $ = require('jquery')
 require('less/note.less');
 require('less/index.less');
-require('less/iconfont.css');
+// require('less/iconfont.css');
