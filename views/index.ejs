@@ -16,14 +16,20 @@
       </div>
       <div class="nav">
         <ul>
-          <li>全部</li>
-          <li>已完成</li>
-          <li>排序</li>
+          <li class="active"><span>全部</span></li>
+          <li><span>已完成<span></li>
+          <li class="sort">
+            <span>排序▽</span>
+            <ul class="child">
+              <li>最新</li>
+              <li>最早</li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="login">
-        <button id="login-github">使用Github登录</button>
-        <button id="login-sign">用户登录</button>
+        <span></span>
+        <span class="btn" id="login-github">Github登录</span>
       </div>
     </div>
   </div>

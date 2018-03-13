@@ -6,7 +6,7 @@
     "start": "node ./bin/www",
     "webpack": "webpack --config=src/webpack.config.js",
     "nodemon": "node_modules/.bin/nodemon ./bin/www localhost 3000",
-    "watch": "onchange 'src/**/*.js' 'src/**/*.less' -- npm run webpack"
+    "watch": "onchange 'src/**/*.js' 'src/**/*.less' 'src/**/*.css' -- npm run webpack"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -16,13 +16,15 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.15.5",
+    "file-loader": "^1.1.11",
     "globby": "^8.0.1",
     "less": "^3.0.1",
     "less-loader": "^4.1.0",
     "morgan": "~1.9.0",
     "nodemon": "^1.17.1",
     "serve-favicon": "~2.4.5",
-    "style-loader": "^0.20.3"
+    "style-loader": "^0.20.3",
+    "url-loader": "^1.0.1"
   },
   "devDependencies": {
     "extract-text-webpack-plugin": "^4.0.0-beta.0",

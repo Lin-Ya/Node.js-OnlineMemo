@@ -18,7 +18,16 @@ ul,li {
 }
 //
 
+
+
 @baseColor: #00d3aa;
+.clearfix {
+    &::after {
+        content: '';
+        display: block;
+    }
+}
+
 //header
 .header {
     width: 100%;
@@ -34,6 +43,7 @@ ul,li {
         justify-content: space-between;
         .header-title {
             height: 70px;
+            margin-right: 60px;
             span {
                 vertical-align: middle;
             }
@@ -49,8 +59,49 @@ ul,li {
             }
         }
         .nav {
-            ul {
-                display: flex;
+            font-size: 33px;
+            position: relative;
+            width: 500px;
+            .clearfix;
+            .active {
+                color: @baseColor;
+                span {
+                    border-bottom: 3px solid @baseColor;
+                }
+            }
+            li {
+                color: #999;
+                cursor: pointer;
+                float: left;
+                width: 30%;
+                padding: 12px 0;
+            }
+            .sort {
+                position: absolute;
+                right: 0;
+                .clearfix;
+                &:hover {
+                    li {
+                        display: block;
+                    }
+                }
+                li {
+                    width: 100%;
+                    float: left;
+                    display: none;
+                }
+            }
+        }
+        .login {
+            width: 200px;
+            outline: 1px solid green;
+            color: #fff;
+            background-color: @baseColor;
+            border-radius: 20%;
+            .btn {
+                border: none;
+                cursor: pointer;
+                color: #fff;
             }
         }
     }
