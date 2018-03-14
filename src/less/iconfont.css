@@ -1,11 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url(../font/iconfont.eot?t=1520929215534); /* IE9*/
-  src: url(../font/iconfont.eot?t=1520929215534#iefix) format('embedded-opentype'), /* IE6-IE8 */
-url(../font/iconfont.ttf?t=1520929215534) format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url(../font/iconfont.svg?t=1520929215534#iconfont) format('svg'); /* iOS 4.1- */
+  src: url(../font/iconfont.eot?t=1521013972321); /* IE9*/
+  src: url(../font/iconfont.eot?t=1521013972321#iefix) format('embedded-opentype'), /* IE6-IE8 */
+  url(../font/iconfont.ttf?t=1521013972321) format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url(../font/iconfont.svg?t=1521013972321#iconfont) format('svg'); /* iOS 4.1- */
 }
-
 
 .iconfont {
   font-family:"iconfont" !important;
@@ -14,6 +13,8 @@ url(../font/iconfont.ttf?t=1520929215534) format('truetype'), /* chrome, firefox
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.icon-delete:before { content: "\e659"; }
 
 .icon-star:before { content: "\e642"; }
 

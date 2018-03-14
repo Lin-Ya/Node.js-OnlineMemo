@@ -1,0 +1,60 @@
+@avtiveColor: #15d1e8;
+@baseColor: #00d3aa;
+.node {
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 10px 15px;
+    background-color: #fff;
+    float: left;
+    margin: 10px 5px;
+    .node-header {
+        padding: 10px 0;
+        border-bottom:1px solid #e6e6e6;
+        background-color: #fff;
+        color: #999;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        .node-delete {
+            cursor: pointer;
+        }
+    }
+    .node-content {
+        padding: 10px 0;
+        border-bottom:1px solid #e6e6e6;
+    }
+    .node-level {
+        font-size: 30px;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        color: #dbdbdb;
+        margin: 13px 0;
+        .active {
+            color: @avtiveColor;
+        }
+    }
+    .node-staus {
+        width: 70px;
+        border-radius: 50px;
+        text-align: center;
+        color: #fff;
+        padding: 5px;
+        cursor: pointer;
+        background-color: @baseColor;
+        font-size: 19px;
+    }
+    .finshed {
+        &::after {
+            content: '已完成';
+            font-size: 14px;
+            display: block;
+            width: 100%;
+        } 
+    }
+    .node-status,.finshed {
+        background-color: @avtiveColor;
+    }
+}
