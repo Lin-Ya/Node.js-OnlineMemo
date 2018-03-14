@@ -40,7 +40,11 @@ body {
         display: block;
     }
 }
-
+.btn {
+    &:hover {
+        box-shadow: 0 0 1px 1px rgba(139, 139, 139, 0.561);
+    }
+}
 //header
 .header {
     min-width: 1240px;
@@ -48,6 +52,7 @@ body {
     background-color: #fff;
     margin-bottom: 20px;
     box-shadow: 0 0 2px 3px rgba(153, 153, 153, 0.571);
+    z-index: 0;
     .header-ct {
         margin: 0 auto;
         width: 1200px;

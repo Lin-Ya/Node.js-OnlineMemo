@@ -1,60 +1,143 @@
 @avtiveColor: #15d1e8;
 @baseColor: #00d3aa;
-.node {
-    width: 300px;
-    border-radius: 5px;
-    border: 1px solid #e6e6e6;
-    padding: 10px 15px;
-    background-color: #fff;
-    float: left;
-    margin: 10px 5px;
-    .node-header {
-        padding: 10px 0;
-        border-bottom:1px solid #e6e6e6;
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 1px solid tomato;
+
+    .node {
+        width: 300px;
+        border-radius: 5px;
+        border: 1px solid #e6e6e6;
+        padding: 10px 15px;
         background-color: #fff;
-        color: #999;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-        .node-delete {
+        float: left;
+        margin: 10px 5px;
+        .node-header {
+            padding: 10px 0;
+            border-bottom:1px solid #e6e6e6;
+            background-color: #fff;
+            color: #999;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            .node-delete {
+                cursor: pointer;
+            }
+        }
+        .node-content {
+            padding: 10px 0;
+            border-bottom:1px solid #e6e6e6;
+        }
+        .node-level {
+            font-size: 30px;
+            width: 100px;
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            color: #dbdbdb;
+            margin: 13px 0;
+            .active {
+                color: @avtiveColor;
+            }
+        }
+        .node-staus {
+            width: 70px;
+            border-radius: 50px;
+            text-align: center;
+            color: #fff;
+            padding: 5px;
             cursor: pointer;
+            background-color: @baseColor;
+            font-size: 19px;
+        }
+        .finshed {
+            &::after {
+                content: '已完成';
+                font-size: 14px;
+                display: block;
+                width: 100%;
+            } 
+        }
+        .node-status,.finshed {
+            background-color: @avtiveColor;
         }
     }
-    .node-content {
-        padding: 10px 0;
-        border-bottom:1px solid #e6e6e6;
-    }
-    .node-level {
-        font-size: 30px;
-        width: 100px;
-        display: flex;
-        justify-content: space-around;
-        padding: 0;
-        color: #dbdbdb;
-        margin: 13px 0;
-        .active {
-            color: @avtiveColor;
+
+
+    .addNode {
+        height: 100%;
+        width: 100%;
+        background-color: #65977696;
+        position: absolute;
+        z-index: 2;
+        display: none;
+        .addNode-ct {
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: #fff;
+            .title {
+                text-align: center;
+                position: relative;
+                i {
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                }
+            }
+            .content {
+                height: 250px;
+                border-radius: 10px;
+                background-color: #eee;
+                border: 1px solid #ddd;
+                margin: 20px 0 ;
+                width: 100%;
+                height: 220px;
+                padding: 10px;
+            }
+            .level {
+                display: flex;
+                .star-count {
+                    display: flex;
+                    li {
+                        cursor: pointer;
+                        margin-right: 6px;
+                        color: #ccc;
+                        font-size: 19px;
+                    }
+                    .active {
+                        color: @avtiveColor;
+                    }
+                }
+            }
+            .addBtn {
+                text-align: center;
+                cursor: pointer;
+                border:none;
+                border-radius: 50px;
+                padding: 5px;
+                width: 100px;
+                background-color: @baseColor;
+                color: #fff;
+                display: block;
+                margin: 20px auto;
+            }
         }
     }
-    .node-staus {
-        width: 70px;
-        border-radius: 50px;
-        text-align: center;
-        color: #fff;
-        padding: 5px;
-        cursor: pointer;
-        background-color: @baseColor;
-        font-size: 19px;
-    }
-    .finshed {
-        &::after {
-            content: '已完成';
-            font-size: 14px;
-            display: block;
-            width: 100%;
-        } 
-    }
-    .node-status,.finshed {
-        background-color: @avtiveColor;
+    .addNode.active {
+        display: block;
     }
 }
+

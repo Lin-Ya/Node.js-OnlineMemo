@@ -1,4 +1,15 @@
-.node {
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 1px solid tomato;
+}
+.main .node {
   width: 300px;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
@@ -7,7 +18,7 @@
   float: left;
   margin: 10px 5px;
 }
-.node .node-header {
+.main .node .node-header {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
@@ -16,14 +27,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.node .node-header .node-delete {
+.main .node .node-header .node-delete {
   cursor: pointer;
 }
-.node .node-content {
+.main .node .node-content {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
 }
-.node .node-level {
+.main .node .node-level {
   font-size: 30px;
   width: 100px;
   display: flex;
@@ -32,10 +43,10 @@
   color: #dbdbdb;
   margin: 13px 0;
 }
-.node .node-level .active {
+.main .node .node-level .active {
   color: #15d1e8;
 }
-.node .node-staus {
+.main .node .node-staus {
   width: 70px;
   border-radius: 50px;
   text-align: center;
@@ -45,15 +56,83 @@
   background-color: #00d3aa;
   font-size: 19px;
 }
-.node .finshed::after {
+.main .node .finshed::after {
   content: '\5DF2\5B8C\6210';
   font-size: 14px;
   display: block;
   width: 100%;
 }
-.node .node-status,
-.node .finshed {
+.main .node .node-status,
+.main .node .finshed {
   background-color: #15d1e8;
+}
+.main .addNode {
+  height: 100%;
+  width: 100%;
+  background-color: #65977696;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.main .addNode .addNode-ct {
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.main .addNode .addNode-ct .title {
+  text-align: center;
+  position: relative;
+}
+.main .addNode .addNode-ct .title i {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.main .addNode .addNode-ct .content {
+  height: 250px;
+  border-radius: 10px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 20px 0 ;
+  width: 100%;
+  height: 220px;
+  padding: 10px;
+}
+.main .addNode .addNode-ct .level {
+  display: flex;
+}
+.main .addNode .addNode-ct .level .star-count {
+  display: flex;
+}
+.main .addNode .addNode-ct .level .star-count li {
+  cursor: pointer;
+  margin-right: 6px;
+  color: #ccc;
+  font-size: 19px;
+}
+.main .addNode .addNode-ct .level .star-count .active {
+  color: #15d1e8;
+}
+.main .addNode .addNode-ct .addBtn {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100px;
+  background-color: #00d3aa;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+}
+.main .addNode.active {
+  display: block;
 }
 
 @font-face {font-family: "iconfont";
@@ -107,7 +186,18 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.node {
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border: 1px solid tomato;
+}
+.main .node {
   width: 300px;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
@@ -116,7 +206,7 @@ a {
   float: left;
   margin: 10px 5px;
 }
-.node .node-header {
+.main .node .node-header {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
@@ -125,14 +215,14 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.node .node-header .node-delete {
+.main .node .node-header .node-delete {
   cursor: pointer;
 }
-.node .node-content {
+.main .node .node-content {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
 }
-.node .node-level {
+.main .node .node-level {
   font-size: 30px;
   width: 100px;
   display: flex;
@@ -141,10 +231,10 @@ a {
   color: #dbdbdb;
   margin: 13px 0;
 }
-.node .node-level .active {
+.main .node .node-level .active {
   color: #15d1e8;
 }
-.node .node-staus {
+.main .node .node-staus {
   width: 70px;
   border-radius: 50px;
   text-align: center;
@@ -154,15 +244,83 @@ a {
   background-color: #00d3aa;
   font-size: 19px;
 }
-.node .finshed::after {
+.main .node .finshed::after {
   content: '\5DF2\5B8C\6210';
   font-size: 14px;
   display: block;
   width: 100%;
 }
-.node .node-status,
-.node .finshed {
+.main .node .node-status,
+.main .node .finshed {
   background-color: #15d1e8;
+}
+.main .addNode {
+  height: 100%;
+  width: 100%;
+  background-color: #65977696;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.main .addNode .addNode-ct {
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+.main .addNode .addNode-ct .title {
+  text-align: center;
+  position: relative;
+}
+.main .addNode .addNode-ct .title i {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+.main .addNode .addNode-ct .content {
+  height: 250px;
+  border-radius: 10px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  margin: 20px 0 ;
+  width: 100%;
+  height: 220px;
+  padding: 10px;
+}
+.main .addNode .addNode-ct .level {
+  display: flex;
+}
+.main .addNode .addNode-ct .level .star-count {
+  display: flex;
+}
+.main .addNode .addNode-ct .level .star-count li {
+  cursor: pointer;
+  margin-right: 6px;
+  color: #ccc;
+  font-size: 19px;
+}
+.main .addNode .addNode-ct .level .star-count .active {
+  color: #15d1e8;
+}
+.main .addNode .addNode-ct .addBtn {
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  padding: 5px;
+  width: 100px;
+  background-color: #00d3aa;
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+}
+.main .addNode.active {
+  display: block;
 }
 body {
   background-color: #f4f4f4;
@@ -174,12 +332,16 @@ body {
   content: '';
   display: block;
 }
+.btn:hover {
+  box-shadow: 0 0 1px 1px rgba(139, 139, 139, 0.561);
+}
 .header {
   min-width: 1240px;
   height: 110px;
   background-color: #fff;
   margin-bottom: 20px;
   box-shadow: 0 0 2px 3px rgba(153, 153, 153, 0.571);
+  z-index: 0;
 }
 .header .header-ct {
   margin: 0 auto;
