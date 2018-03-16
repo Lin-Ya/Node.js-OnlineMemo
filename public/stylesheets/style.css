@@ -1,15 +1,4 @@
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-.main {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border: 1px solid tomato;
-}
-.main .node {
+.node {
   width: 300px;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
@@ -18,7 +7,7 @@ body {
   float: left;
   margin: 10px 5px;
 }
-.main .node .node-header {
+.node .node-header {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
@@ -27,14 +16,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main .node .node-header .node-delete {
+.node .node-header .node-delete {
   cursor: pointer;
 }
-.main .node .node-content {
+.node .node-content {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
 }
-.main .node .node-level {
+.node .node-level {
   font-size: 30px;
   width: 100px;
   display: flex;
@@ -43,10 +32,10 @@ body {
   color: #dbdbdb;
   margin: 13px 0;
 }
-.main .node .node-level .active {
+.node .node-level .active {
   color: #15d1e8;
 }
-.main .node .node-staus {
+.node .node-staus {
   width: 70px;
   border-radius: 50px;
   text-align: center;
@@ -56,17 +45,17 @@ body {
   background-color: #00d3aa;
   font-size: 19px;
 }
-.main .node .finshed::after {
+.node .finshed::after {
   content: '\5DF2\5B8C\6210';
   font-size: 14px;
   display: block;
   width: 100%;
 }
-.main .node .node-status,
-.main .node .finshed {
+.node .node-status,
+.node .finshed {
   background-color: #15d1e8;
 }
-.main .addNode {
+.addNode {
   height: 100%;
   width: 100%;
   background-color: #65977696;
@@ -74,7 +63,7 @@ body {
   z-index: 2;
   display: none;
 }
-.main .addNode .addNode-ct {
+.addNode .addNode-ct {
   padding: 10px;
   border-radius: 10px;
   position: absolute;
@@ -85,16 +74,16 @@ body {
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
-.main .addNode .addNode-ct .title {
+.addNode .addNode-ct .title {
   text-align: center;
   position: relative;
 }
-.main .addNode .addNode-ct .title i {
+.addNode .addNode-ct .title i {
   position: absolute;
   right: 0;
   top: 10px;
 }
-.main .addNode .addNode-ct .content {
+.addNode .addNode-ct .content {
   height: 250px;
   border-radius: 10px;
   background-color: #eee;
@@ -104,22 +93,22 @@ body {
   height: 220px;
   padding: 10px;
 }
-.main .addNode .addNode-ct .level {
+.addNode .addNode-ct .level {
   display: flex;
 }
-.main .addNode .addNode-ct .level .star-count {
+.addNode .addNode-ct .level .star-count {
   display: flex;
 }
-.main .addNode .addNode-ct .level .star-count li {
+.addNode .addNode-ct .level .star-count li {
   cursor: pointer;
   margin-right: 6px;
   color: #ccc;
   font-size: 19px;
 }
-.main .addNode .addNode-ct .level .star-count .active {
+.addNode .addNode-ct .level .star-count .active {
   color: #15d1e8;
 }
-.main .addNode .addNode-ct .addBtn {
+.addNode .addNode-ct .addBtn {
   text-align: center;
   cursor: pointer;
   border: none;
@@ -131,7 +120,7 @@ body {
   display: block;
   margin: 20px auto;
 }
-.main .addNode.active {
+.addNode.active {
   display: block;
 }
 
@@ -186,18 +175,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-.main {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  border: 1px solid tomato;
-}
-.main .node {
+.node {
   width: 300px;
   border-radius: 5px;
   border: 1px solid #e6e6e6;
@@ -206,7 +184,7 @@ body {
   float: left;
   margin: 10px 5px;
 }
-.main .node .node-header {
+.node .node-header {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
   background-color: #fff;
@@ -215,14 +193,14 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.main .node .node-header .node-delete {
+.node .node-header .node-delete {
   cursor: pointer;
 }
-.main .node .node-content {
+.node .node-content {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
 }
-.main .node .node-level {
+.node .node-level {
   font-size: 30px;
   width: 100px;
   display: flex;
@@ -231,10 +209,10 @@ body {
   color: #dbdbdb;
   margin: 13px 0;
 }
-.main .node .node-level .active {
+.node .node-level .active {
   color: #15d1e8;
 }
-.main .node .node-staus {
+.node .node-staus {
   width: 70px;
   border-radius: 50px;
   text-align: center;
@@ -244,17 +222,17 @@ body {
   background-color: #00d3aa;
   font-size: 19px;
 }
-.main .node .finshed::after {
+.node .finshed::after {
   content: '\5DF2\5B8C\6210';
   font-size: 14px;
   display: block;
   width: 100%;
 }
-.main .node .node-status,
-.main .node .finshed {
+.node .node-status,
+.node .finshed {
   background-color: #15d1e8;
 }
-.main .addNode {
+.addNode {
   height: 100%;
   width: 100%;
   background-color: #65977696;
@@ -262,7 +240,7 @@ body {
   z-index: 2;
   display: none;
 }
-.main .addNode .addNode-ct {
+.addNode .addNode-ct {
   padding: 10px;
   border-radius: 10px;
   position: absolute;
@@ -273,16 +251,16 @@ body {
   transform: translate(-50%, -50%);
   background-color: #fff;
 }
-.main .addNode .addNode-ct .title {
+.addNode .addNode-ct .title {
   text-align: center;
   position: relative;
 }
-.main .addNode .addNode-ct .title i {
+.addNode .addNode-ct .title i {
   position: absolute;
   right: 0;
   top: 10px;
 }
-.main .addNode .addNode-ct .content {
+.addNode .addNode-ct .content {
   height: 250px;
   border-radius: 10px;
   background-color: #eee;
@@ -292,22 +270,22 @@ body {
   height: 220px;
   padding: 10px;
 }
-.main .addNode .addNode-ct .level {
+.addNode .addNode-ct .level {
   display: flex;
 }
-.main .addNode .addNode-ct .level .star-count {
+.addNode .addNode-ct .level .star-count {
   display: flex;
 }
-.main .addNode .addNode-ct .level .star-count li {
+.addNode .addNode-ct .level .star-count li {
   cursor: pointer;
   margin-right: 6px;
   color: #ccc;
   font-size: 19px;
 }
-.main .addNode .addNode-ct .level .star-count .active {
+.addNode .addNode-ct .level .star-count .active {
   color: #15d1e8;
 }
-.main .addNode .addNode-ct .addBtn {
+.addNode .addNode-ct .addBtn {
   text-align: center;
   cursor: pointer;
   border: none;
@@ -319,21 +297,26 @@ body {
   display: block;
   margin: 20px auto;
 }
-.main .addNode.active {
+.addNode.active {
   display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 body {
   background-color: #f4f4f4;
 }
+.main {
+  height: 100%;
+  width: 100%;
+}
 .iconfont {
   cursor: pointer;
 }
-.clearfix::after {
-  content: '';
-  display: block;
-}
 .btn:hover {
-  box-shadow: 0 0 1px 1px rgba(139, 139, 139, 0.561);
+  cursor: pointer;
 }
 .header {
   min-width: 1240px;
@@ -370,11 +353,8 @@ body {
 .header .header-ct .nav {
   font-size: 33px;
   position: relative;
-  width: 500px;
-}
-.header .header-ct .nav::after {
-  content: '';
-  display: block;
+  width: 450px;
+  z-index: 1;
 }
 .header .header-ct .nav .active {
   color: #00d3aa;
@@ -383,11 +363,13 @@ body {
   border-bottom: 3px solid #00d3aa;
 }
 .header .header-ct .nav li {
+  background-color: #fff;
   color: #999;
   cursor: pointer;
   float: left;
-  width: 30%;
+  width: 25%;
   padding: 12px 0;
+  margin-right: 20px;
 }
 .header .header-ct .nav .sort {
   position: absolute;
@@ -398,9 +380,6 @@ body {
 }
 .header .header-ct .nav .sort:hover .child li:hover {
   color: #686868;
-}
-.header .header-ct .nav .sort .child {
-  margin-top: 20px;
 }
 .header .header-ct .nav .sort .child li {
   width: 100%;
@@ -431,4 +410,33 @@ body {
 .container {
   width: 1240px;
   margin: 20px auto;
+}
+.container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.btnGroup {
+  position: fixed;
+  right: 10vh;
+  bottom: 10vh;
+}
+.btnGroup a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
+  box-shadow: 0 1px 10px 1px rgba(64, 84, 68, 0.256);
+}
+.btnGroup .icon-top {
+  background-color: #fff;
+  color: #00d3aa;
+}
+.btnGroup .icon-add {
+  color: #fff;
+  background-color: #00d3aa;
 }
